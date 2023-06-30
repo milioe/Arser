@@ -25,7 +25,7 @@ if is_optimized:
     with tab[1]:
         header = st.header("Portfolio")
         columns=["Portfolio", "Annual Return", "Volatility", "Sharpe Ratio", "Standard Deviation", "Sortino Ratio", "Upside Capture Ratio", "Downside Capture Ratio", "Capture Ratio"]
-        returns_df, weights_df, data_returns, benchmark_returns = portfolio_optimization(data, selected_etf_list, benchmark, etf_combo, columns)
+        returns_df, weights_df, data_returns, benchmark_returns = portfolio_optimization(selected_optimizers, data, selected_etf_list, benchmark, etf_combo, columns)
                         
         subtabs = st.tabs(["Returns", "Volatility", "Sharpe Ratio", "Capture Ratio"])
 

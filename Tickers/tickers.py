@@ -26,7 +26,7 @@ lista_media = ["EWC","IAU", "IVV", "QQQ", "VGK", "XLC", "XLE", "XLF", "XLK", "XL
 lista_corta =  ["EWC", "IAU", "IVV", "QQQ", "VGK", "XLC", "XLE", "XLF", "XLK", "XLV", "EWZ", "IEF"]
 
 
-lista_nueva = ["IVV", "IVV", "SPY", "VOO","QQQ", "IWF", "IWF", "IJH", "XLK", "XLV", "XLE", "VTI", "QUAL", "EFA", \
+lista_nueva = ["IVV", "SPY", "VOO","QQQ","IWF", "IJH", "XLK", "XLV", "XLE", "VTI", "QUAL", "EFA", \
             "VWO", "EWZ", "EWW", "EWA", "EWJ", "EWH", "VEU", "IEFA", "VIG", "VUG", "VEA", "VBR", "IVE", "XLP", "XLY", "XLI", "XLC", "VB", "RSP", \
             "BND", "AGG", "VCIT", "TLT", "BSV", "LQD", "VCSH", "IEF", "BIL", "GOVT", "IGSB", "IUSB", "TIP", "HYG", "IEI", "STIP", "IGIB", "USIG", \
             "TLH", "SPTL", "TFLO", "VCLT", "VNQ", "IAU", "SLV", "PDBC", "SCHH", "XLRE", "REET", "BOIL", "DBC", "USRT", "ICF", "VNQI", "DBA"]

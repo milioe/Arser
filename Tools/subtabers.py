@@ -94,7 +94,6 @@ def display_metrics(returns_row):
     st.table(formatted_df)  # Usamos st.table para presentar la tabla formateada
 
 
-
 def portfolio_info(returns_df, weights_df, sort_by, amount, data, data_returns, benchmark_returns):
     top_5_etfs_returns = returns_df.sort_values(by=sort_by, ascending=False).head(5)
     for idx, row in top_5_etfs_returns.iterrows():
@@ -111,6 +110,9 @@ def portfolio_info(returns_df, weights_df, sort_by, amount, data, data_returns, 
 
             with subsubtabs[2]:
                 create_matrices(weights_row, data_returns)
+
+            with subsubtabs[3]:
+                create_backtesting(weights_row, data_returns, benchmark_returns)
 
             with subsubtabs[3]:
                 create_backtesting(weights_row, data_returns, benchmark_returns)

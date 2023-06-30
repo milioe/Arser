@@ -9,7 +9,9 @@ def display_menu():
     etf_lists = {"List 1": lista_completa, "List 2": lista_media, "List 3": lista_corta, "List 4": lista_nueva}
 
     # Dummy list of optimizers
-    optimizers = ["Mean-Variance", "Sharpe-Ratio", "Optimización de Partículas en Enjambr PSO", "Algoritmo Genético (GA):", "Recocido Simulado (SA)", "NSGA-II", "Optimización por Colonia de Hormigas (ACO)", "Optimización Cuckoo (CO)", "Optimización por Enjambre de Luciérnagas (FA)", "Algoritmo de Abejas (BA)", "Algoritmo del Murciélago (BA)", "Algoritmo de Busqueda de Armonía (HS)", "Optimización por Fuerza Gravitacional (GSA)", "Algoritmo de Busqueda Diferencial (DE)", "Optimización por Enjambre de Abubillas (HOA)"]
+    optimizers = ["Mean-Variance", "CVaR"]
+
+    # optimizers = ["Mean-Variance", "CVaR" "Sharpe-Ratio", "Optimización de Partículas en Enjambr PSO", "Algoritmo Genético (GA):", "Recocido Simulado (SA)", "NSGA-II", "Optimización por Colonia de Hormigas (ACO)", "Optimización Cuckoo (CO)", "Optimización por Enjambre de Luciérnagas (FA)", "Algoritmo de Abejas (BA)", "Algoritmo del Murciélago (BA)", "Algoritmo de Busqueda de Armonía (HS)", "Optimización por Fuerza Gravitacional (GSA)", "Algoritmo de Busqueda Diferencial (DE)", "Optimización por Enjambre de Abubillas (HOA)"]
 
     # Dummy list of benchmarks
     benchmarks = ["^GSPC", "^IXIC", "^DJI"]
@@ -32,12 +34,12 @@ def display_menu():
         etf_list_name = st.radio('Choose an ETF list', list(etf_lists.keys()))
         selected_etf_list = etf_lists[etf_list_name]
 
-        selected_optimizers = st.multiselect('Choose the optimizers', optimizers, default=["Mean-Variance"])
+        selected_optimizers = st.selectbox('Choose the optimizers', optimizers)
 
     with col2:
         benchmark = st.selectbox('Choose a benchmark', benchmarks, index=0)
 
-        etf_combo = st.multiselect('Choose the ETF combinations for each portfolio', etf_combinations, default=2)
+        etf_combo = st.selectbox('Choose the ETF combinations for each portfolio', etf_combinations)
 
     button = st.empty()
 
