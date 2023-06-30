@@ -114,7 +114,4 @@ def portfolio_info(returns_df, weights_df, sort_by, amount, data, data_returns, 
             with subsubtabs[3]:
                 create_backtesting(weights_row, data_returns, benchmark_returns)
 
-            with subsubtabs[3]:
-                create_backtesting(weights_row, data_returns, benchmark_returns)
-
 
